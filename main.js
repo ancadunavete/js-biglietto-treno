@@ -8,17 +8,18 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 
 //Fase prep
 const prezzoBigliettoKm = 0.21
-let km = parseInt(prompt(Quanti km devi percorrere?))
-let eta = parseInt(prompt(Quanti anni hai?))
+let km = parseInt(prompt("Quanti km devi percorrere?"))
+let eta = parseInt(prompt("Quanti anni hai?"))
 let scontoMin = 0.80 // 20%
-let scontoMag = 0.60 // 40% 
+let scontoMag = 0.60 // 40%
+let prezzoBiglietto 
 
-console.log (`I tuoi km sono ${ km }, la tua eta è ${ eta } il prezzo del biglietto sarebbe ${ km * prezzoBigliettoKm }`)
+//console.log (`I tuoi km sono ${ km }, la tua eta è ${ eta } il prezzo del biglietto sarebbe ${ km * prezzoBigliettoKm }`)
 
 //Fase elab
 
 if(eta<18) {
-    prezzoBiglietto = (prezzoBigliettoKm * km) *scontoMin
+    prezzoBiglietto = (prezzoBigliettoKm * km) * scontoMin
     console.log (`Il prezzo del tuo biglietto è: ${prezzoBiglietto}`)
 } 
 else if(eta>65) {
@@ -32,4 +33,4 @@ else {
 
 //Fase output
 
-console.log (`Il prezzo del tuo biglietto è: ${prezzoBiglietto.toFixed(2)}`)
+console.log (`Il prezzo del tuo biglietto è: ${prezzoBiglietto.toFixed(2)}`);
