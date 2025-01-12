@@ -29,3 +29,5 @@ else {
 }
 
 //Fase output
+
+console.log (`Il prezzo del tuo biglietto è: ${prezzoBiglietto.toFixed(2)}`)
